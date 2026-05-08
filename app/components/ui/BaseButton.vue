@@ -19,7 +19,7 @@ const componentTag = computed(() => {
 });
 
 const buttonClasses = computed(() => {
-	const baseClasses = 'px-4 py-2 tracking-widest font-mono transition';
+	const baseClasses = 'px-4 py-2 tracking-normal md:tracking-widest font-mono transition';
 
 	const variantClasses = {
 		outline: 'border border-primary hover:bg-primary hover:text-white',

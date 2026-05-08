@@ -17,8 +17,8 @@ const classes = computed(() => {
 	const baseClasses = 'uppercase font-inter';
 
 	const variantClasses = {
-		h1: 'text-8xl md:text-9xl tracking-tighter font-black',
-		h2: 'text-6xl uppercase tracking-tighter font-bold',
+		h1: 'text-7xl md:text-9xl tracking-tighter font-black',
+		h2: 'text-5xl md:text-6xl uppercase tracking-tighter font-bold',
 		h3: 'text-2xl tracking-tight font-bold',
 		h4: 'text-xs tracking-widest font-mono',
 	};

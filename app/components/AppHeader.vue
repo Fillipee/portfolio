@@ -11,7 +11,7 @@ const { isNotAtTop } = useScrollbar();
 			<BaseButton
 				href="#"
 				variant="ghost"
-				class="text-sm"
+				class="text-sm font-black px-0"
 			>
 				FV.
 			</BaseButton>
