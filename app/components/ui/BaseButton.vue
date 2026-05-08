@@ -11,9 +11,12 @@ const props = withDefaults(defineProps<Props>(), {
 	variant: 'outline',
 });
 
-const componentTag = computed(() =>
-	props.href ? resolveComponent('NuxtLink') : 'button',
-);
+const isAnchor = computed(() => props.href?.startsWith('#'));
+
+const componentTag = computed(() => {
+	if (isAnchor.value) return 'a';
+	return props.href ? resolveComponent('NuxtLink') : 'button';
+});
 
 const buttonClasses = computed(() => {
 	const baseClasses = 'px-4 py-2 tracking-widest font-mono transition';
@@ -30,7 +33,8 @@ const buttonClasses = computed(() => {
 <template>
 	<component
 		:is="componentTag"
-		:to="props.href"
+		:to="!isAnchor ? props.href : undefined"
+		:href="isAnchor ? props.href : undefined"
 		:class="buttonClasses"
 	>
 		<slot />

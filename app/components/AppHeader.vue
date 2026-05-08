@@ -4,12 +4,12 @@ const { isNotAtTop } = useScrollbar();
 
 <template>
 	<div
-		class="fixed top-0 w-full bg-background"
+		class="fixed top-0 w-full bg-background z-10"
 		:class="{ 'border-b border-border': isNotAtTop }"
 	>
 		<header class="container mx-auto flex justify-between p-4">
 			<BaseButton
-				href="#o-mne"
+				href="#"
 				variant="ghost"
 				class="text-sm"
 			>
