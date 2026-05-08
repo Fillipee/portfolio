@@ -22,11 +22,9 @@ const skills: SkillCategory[] = [
 
 <template>
   <section id="o-mne" class="pb-32">
-    <h2
-      class="font-mono text-xs tracking-widest uppercase border-b border-border pb-4 mb-8"
-    >
+    <Heading level="h2" variant="h4" class="pb-4 mb-8 border-b border-border">
       O mně
-    </h2>
+    </Heading>
     <div class="grid md:grid-cols-2 gap-16">
       <div>
         <p class="text-xl md:text-2xl font-light leading-relaxed pb-8">
@@ -41,16 +39,18 @@ const skills: SkillCategory[] = [
         </p>
       </div>
       <div>
-        <h3
-          class="font-mono text-xs text-muted tracking-widest uppercase mb-4 mt-2 leading-relaxed"
+        <Heading
+          level="h3"
+          variant="h4"
+          class="mb-4 text-muted leading-relaxed"
         >
           Technologie
-        </h3>
+        </Heading>
         <div class="grid grid-cols-2 gap-4">
           <div v-for="(skill, index) in skills" :key="index">
-            <h4 class="font-mono text-xs tracking-widest uppercase">
+            <Heading level="h4">
               {{ skill.category }}
-            </h4>
+            </Heading>
             <ul class="mt-4 flex flex-col gap-2">
               <li
                 v-for="(item, itemIndex) in skill.items"

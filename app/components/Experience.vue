@@ -32,11 +32,9 @@ const workItems: TimelineItem[] = [
 <template>
   <section id="zkusenosti">
     <div class="pb-16">
-      <h2
-        class="font-mono text-xs tracking-widest uppercase border-b border-border pb-4"
-      >
+      <Heading level="h2" variant="h4" class="pb-4 border-b border-border">
         Vzdělání
-      </h2>
+      </Heading>
       <TimelineItem
         v-for="(education, index) in educationItems"
         :key="index"
@@ -47,11 +45,9 @@ const workItems: TimelineItem[] = [
       />
     </div>
     <div class="pb-32">
-      <h2
-        class="font-mono text-xs tracking-widest uppercase border-b border-border pb-4"
+      <Heading level="h2" variant="h4" class="pb-4 border-b border-border"
+        >Zkušenosti</Heading
       >
-        Zkušenosti
-      </h2>
       <TimelineItem
         v-for="(work, index) in workItems"
         :key="index"

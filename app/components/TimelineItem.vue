@@ -14,9 +14,7 @@ const props = defineProps<Props>();
     class="not-last:border-b not-last:border-border py-8 flex justify-between"
   >
     <hgroup>
-      <h3 class="tracking-tight uppercase font-black text-2xl">
-        {{ props.title }}
-      </h3>
+      <Heading level="h3" variant="h3" class="pb-4">{{ props.title }}</Heading>
       <p v-if="props.subTitle" class="text-muted text-sm font-mono">
         {{ props.subTitle }}
       </p>

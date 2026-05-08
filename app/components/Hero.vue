@@ -1,8 +1,6 @@
 <template>
   <section class="min-h-screen flex flex-col justify-end pb-32">
-    <h1 class="text-8xl md:text-9xl uppercase tracking-tighter font-black">
-      Filip<br />Vepřík
-    </h1>
+    <Heading level="h1"> Filip<br />Vepřík </Heading>
     <hr class="text-border my-16" />
     <div class="grid md:grid-cols-3">
       <p class="text-muted text-lg col-span-2 lg:col-span-1">
