@@ -1,7 +1,12 @@
 <template>
   <section class="min-h-screen flex flex-col justify-end pb-32">
-    <Heading level="h1"> Filip<br />Vepřík </Heading>
-    <hr class="text-border my-16" />
+    <div class="relative flex-1 flex items-end">
+      <Dots />
+      <Heading level="h1" class="pb-16 pr-6 bg-background">
+        Filip<br />Vepřík
+      </Heading>
+    </div>
+    <hr class="text-border mb-16" />
     <div class="grid md:grid-cols-3">
       <p class="text-muted text-lg col-span-2 lg:col-span-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices
