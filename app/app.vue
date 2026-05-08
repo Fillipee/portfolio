@@ -1,8 +1,8 @@
 <template>
-  <NuxtLayout>
-    <Hero />
-    <Experience />
-    <About />
-    <Contact />
-  </NuxtLayout>
+	<NuxtLayout>
+		<HeroSection />
+		<ExperienceSection />
+		<AboutSection />
+		<ContactSection />
+	</NuxtLayout>
 </template>

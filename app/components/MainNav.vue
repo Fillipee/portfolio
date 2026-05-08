@@ -1,0 +1,33 @@
+<template>
+	<nav>
+		<ul class="flex gap-4">
+			<li>
+				<BaseButton
+					href="#o-mne"
+					variant="ghost"
+					class="text-sm"
+				>
+					O mně
+				</BaseButton>
+			</li>
+			<li>
+				<BaseButton
+					href="#zkusenosti"
+					variant="ghost"
+					class="text-sm"
+				>
+					Zkušenosti
+				</BaseButton>
+			</li>
+			<li>
+				<BaseButton
+					href="#kontakt"
+					variant="ghost"
+					class="text-sm"
+				>
+					Kontakt
+				</BaseButton>
+			</li>
+		</ul>
+	</nav>
+</template>

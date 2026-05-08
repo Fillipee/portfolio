@@ -1,25 +1,37 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-07-15",
-  devtools: { enabled: true },
-  typescript: {
-    typeCheck: true,
-  },
 
-  components: [
-    {
-      path: "~/components",
-      pathPrefix: false,
-    },
-  ],
+	modules: ['@nuxt/eslint'],
 
-  css: ["./app/assets/css/main.css"],
+	components: [
+		{
+			path: '~/components',
+			pathPrefix: false,
+		},
+	],
+	devtools: { enabled: true },
 
-  vite: {
-    plugins: [tailwindcss()],
-  },
+	css: ['./app/assets/css/main.css'],
+	compatibilityDate: '2025-07-15',
 
-  modules: ["@nuxt/eslint"],
+	vite: {
+		plugins: [tailwindcss()],
+	},
+	typescript: {
+		typeCheck: true,
+	},
+
+	eslint: {
+		config: {
+			stylistic: {
+				indent: 'tab',
+				semi: true,
+			},
+		},
+		checker: {
+			eslintPath: 'eslint',
+		},
+	},
 });
