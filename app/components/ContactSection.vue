@@ -14,13 +14,12 @@
 			<BaseHeading
 				level="h3"
 				variant="h2"
-				class="mb-8"
+				class="mb-16"
 			>
 				Pojďme spolu něco vymyslet
 			</BaseHeading>
-			<p class="text-muted border-b border-border pb-16">
-				Kontaktujte mě na
-				<span class="font-mono">filipveprik@seznam.cz</span>
+			<p class="font-mono text-muted border-b border-border pb-16">
+				filipveprik@seznam.cz
 			</p>
 		</div>
 	</section>

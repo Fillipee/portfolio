@@ -17,7 +17,7 @@ const props = defineProps<Props>();
 			<BaseHeading
 				level="h3"
 				variant="h3"
-				class="pb-4"
+				class="pb-2"
 			>
 				{{ props.title }}
 			</BaseHeading>

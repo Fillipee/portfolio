@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
-	modules: ['@nuxt/eslint'],
+	modules: ['@nuxt/eslint', '@nuxt/fonts'],
 
 	components: [
 		{
@@ -33,5 +33,20 @@ export default defineNuxtConfig({
 		checker: {
 			eslintPath: 'eslint',
 		},
+	},
+
+	fonts: {
+		families: [
+			{
+				name: 'Public Sans',
+				provider: 'google',
+				weights: ['300', '400', '600', '700', '900'],
+			},
+			{
+				name: 'Inter',
+				provider: 'google',
+				weights: ['300', '400', '600', '700', '900'],
+			},
+		],
 	},
 });

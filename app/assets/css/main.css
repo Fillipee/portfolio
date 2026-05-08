@@ -5,6 +5,8 @@
     --color-background: oklch(1 0 360);
     --color-border: oklch(0.8529 0 266);
     --color-muted: oklch(0.4133 0 268.41);
+
+    --font-inter: 'Inter', sans-serif;
 }
 
 html {
