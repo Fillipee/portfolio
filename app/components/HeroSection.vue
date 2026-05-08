@@ -4,7 +4,7 @@
 			<BackgroundDots />
 			<BaseHeading
 				level="h1"
-				class="pb-16 pr-6 bg-background"
+				class="pb-16 pr-6 bg-background after:content-[''] after:inline-block after:size-4 md:after:size-6 after:bg-primary"
 			>
 				Filip<br>Vepřík
 			</BaseHeading>
