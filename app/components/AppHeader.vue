@@ -11,9 +11,9 @@ const { isNotAtTop } = useScrollbar();
 			<BaseButton
 				href="#"
 				variant="ghost"
-				class="text-sm font-black px-0"
+				class="inline-flex items-baseline text-primary text-sm font-black px-0 after:content-[''] after:size-1 after:bg-primary"
 			>
-				FV.
+				FV
 			</BaseButton>
 			<MainNav />
 		</header>
