@@ -13,3 +13,8 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
