@@ -23,7 +23,7 @@
 					O mně
 				</BaseButton>
 				<BaseButton
-					href="#o-mne"
+					href="#kontakt"
 					variant="ghost"
 				>
 					Kontakt
