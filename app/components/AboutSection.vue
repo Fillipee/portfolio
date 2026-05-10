@@ -23,7 +23,7 @@ const skills: SkillCategory[] = [
 <template>
 	<section
 		id="o-mne"
-		class="pb-32"
+		class="pb-16 md:pb-32"
 	>
 		<BaseHeading
 			level="h2"

@@ -1,6 +1,6 @@
 <template>
 	<nav>
-		<ul class="flex gap-2 md:gap-4">
+		<ul class="flex md:gap-4">
 			<li>
 				<BaseButton
 					href="#o-mne"

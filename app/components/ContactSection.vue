@@ -1,20 +1,20 @@
 <template>
 	<section
 		id="kontakt"
-		class="pb-16"
+		class="pb-8 md:pb-16"
 	>
 		<BaseHeading
 			level="h2"
 			variant="h4"
-			class="pb-4 mb-16 border-b border-border"
+			class="pb-4 mb-8 md:mb-16 border-b border-border"
 		>
 			Kontakt
 		</BaseHeading>
-		<div class="md:w-1/2 border-b border-border pb-16">
+		<div class="md:w-1/2 border-b border-border pb-8 md:pb-16">
 			<BaseHeading
 				level="h3"
 				variant="h2"
-				class="mb-16"
+				class="mb-8 md:mb-16"
 			>
 				Pojďme spolu něco vymyslet
 			</BaseHeading>

@@ -31,7 +31,7 @@ const workItems: TimelineItem[] = [
 
 <template>
 	<section id="zkusenosti">
-		<div class="pb-16">
+		<div class="pb-8 md:pb-16">
 			<BaseHeading
 				level="h2"
 				variant="h4"
@@ -48,7 +48,7 @@ const workItems: TimelineItem[] = [
 				:to="education.to"
 			/>
 		</div>
-		<div class="pb-32">
+		<div class="pb-8 md:pb-16">
 			<BaseHeading
 				level="h2"
 				variant="h4"

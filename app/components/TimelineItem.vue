@@ -11,7 +11,7 @@ const props = defineProps<Props>();
 
 <template>
 	<div
-		class="flex flex-col-reverse md:flex-row justify-between py-16 not-last:border-b not-last:border-border"
+		class="flex flex-col-reverse md:flex-row justify-between py-8 md:py-16 not-last:border-b not-last:border-border"
 	>
 		<hgroup>
 			<BaseHeading
