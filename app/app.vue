@@ -1,15 +1,21 @@
 <script setup lang="ts">
 const config = useRuntimeConfig();
+const route = useRoute();
 
+const siteUrl = config.public.siteUrl;
 const title = 'Filip Vepřík.';
 const description = 'Moderní weby s čistým designem a špičkovým výkonem.';
 
 useSeoMeta({
 	title: title,
-	ogTitle: title,
 	description: description,
+	ogTitle: title,
 	ogDescription: description,
-	ogImage: `${config.public.siteUrl}/og-image.png`,
+	ogImage: `${siteUrl}/og-image.png`,
+	ogUrl: new URL(route.path, siteUrl).href,
+	ogType: 'website',
+	ogLocale: 'cs-CZ',
+	robots: 'index, follow',
 });
 </script>
 
