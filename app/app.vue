@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const url = useRequestURL();
+const config = useRuntimeConfig();
+
 const title = 'Filip Vepřík.';
 const description = 'Moderní weby s čistým designem a špičkovým výkonem.';
 
@@ -8,7 +9,7 @@ useSeoMeta({
 	ogTitle: title,
 	description: description,
 	ogDescription: description,
-	ogImage: `${url.origin}/og-image.png`,
+	ogImage: `${config.public.siteUrl}/og-image.png`,
 });
 </script>
 

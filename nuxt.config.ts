@@ -21,6 +21,12 @@ export default defineNuxtConfig({
 	},
 
 	css: ['./app/assets/css/main.css'],
+
+	runtimeConfig: {
+		public: {
+			siteUrl: 'https://filipveprik.cz',
+		},
+	},
 	compatibilityDate: '2025-07-15',
 
 	vite: {
