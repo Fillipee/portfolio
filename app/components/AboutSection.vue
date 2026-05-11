@@ -35,14 +35,10 @@ const skills: SkillCategory[] = [
 		<div class="grid md:grid-cols-2 gap-16">
 			<div>
 				<p class="text-xl md:text-2xl font-light leading-relaxed pb-8">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices
-					tellus eget dolor convallis imperdiet.
+					Mým cílem není jen funkčnost. Tvořím čistá a udržitelná řešení.
 				</p>
 				<p class="leading-relaxed text-muted">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices
-					tellus eget dolor convallis imperdiet.Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit. Sed ultrices tellus eget dolor convallis
-					imperdiet.
+					Zakládám si na čisté architektuře. Nejde mi jen o to napsat funkční kód, ale najít elegantní a udržitelné řešení. Výsledek totiž musí dávat smysl nejen mně v kódu, ale hlavně lidem, kteří web nakonec používají.
 				</p>
 			</div>
 			<div>
