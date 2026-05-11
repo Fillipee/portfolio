@@ -18,6 +18,14 @@ const skills: SkillCategory[] = [
 		items: ['Next.js'],
 	},
 ];
+
+const getSkillKey = (skill: SkillCategory) => {
+	return slugify(`${skill.category}`);
+};
+
+const getSkillItemKey = (skill: SkillCategory, item: string) => {
+	return slugify(`${skill.category}-${item}`);
+};
 </script>
 
 <template>
@@ -51,16 +59,16 @@ const skills: SkillCategory[] = [
 				</BaseHeading>
 				<div class="grid grid-cols-2 gap-4">
 					<div
-						v-for="(skill, index) in skills"
-						:key="index"
+						v-for="skill in skills"
+						:key="getSkillKey(skill)"
 					>
 						<BaseHeading level="h4">
 							{{ skill.category }}
 						</BaseHeading>
 						<ul class="mt-4 flex flex-col gap-2">
 							<li
-								v-for="(item, itemIndex) in skill.items"
-								:key="`${index}-${itemIndex}`"
+								v-for="item in skill.items"
+								:key="getSkillItemKey(skill, item)"
 								class="font-mono text-sm text-muted"
 							>
 								{{ item }}

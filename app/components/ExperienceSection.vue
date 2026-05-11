@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { slugify } from '~/utils/slugify';
+
 interface TimelineItem {
 	title: string;
 	subTitle?: string;
@@ -27,6 +29,10 @@ const workItems: TimelineItem[] = [
 		from: '2023',
 	},
 ];
+
+const getTimelineItemKey = (item: TimelineItem) => {
+	return slugify(`${item.title}-${item.subTitle ?? ''}-${item.from}-${item.to ?? ''}`);
+};
 </script>
 
 <template>
@@ -40,8 +46,8 @@ const workItems: TimelineItem[] = [
 				Vzdělání
 			</BaseHeading>
 			<TimelineItem
-				v-for="(education, index) in educationItems"
-				:key="index"
+				v-for="education in educationItems"
+				:key="getTimelineItemKey(education)"
 				:title="education.title"
 				:sub-title="education.subTitle"
 				:from="education.from"
@@ -57,8 +63,8 @@ const workItems: TimelineItem[] = [
 				Zkušenosti
 			</BaseHeading>
 			<TimelineItem
-				v-for="(work, index) in workItems"
-				:key="index"
+				v-for="work in workItems"
+				:key="getTimelineItemKey(work)"
 				:title="work.title"
 				:sub-title="work.subTitle"
 				:from="work.from"
