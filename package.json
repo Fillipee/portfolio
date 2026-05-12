@@ -22,6 +22,7 @@
     "vue-router": "^5.0.6"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^4.0.0",
     "typescript": "^6.0.3",
     "vite-plugin-eslint2": "^5.1.0",
     "vue-tsc": "^3.2.8"

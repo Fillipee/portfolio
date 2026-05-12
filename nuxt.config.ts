@@ -2,7 +2,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['@nuxt/eslint', '@nuxt/fonts'],
+	modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxtjs/color-mode'],
 
 	components: [
 		{
@@ -21,6 +21,12 @@ export default defineNuxtConfig({
 	},
 
 	css: ['./app/assets/css/main.css'],
+
+	colorMode: {
+		preference: 'system',
+		fallback: 'light',
+		dataValue: 'theme',
+	},
 
 	runtimeConfig: {
 		public: {

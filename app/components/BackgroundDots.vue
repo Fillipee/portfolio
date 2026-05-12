@@ -2,6 +2,7 @@
 import { onMounted, onBeforeUnmount, useTemplateRef } from 'vue';
 
 const canvasRef = useTemplateRef<HTMLCanvasElement>('dots-canvas');
+const colorMode = useColorMode();
 
 let animationId: number;
 
@@ -61,6 +62,10 @@ const easeInOutSine = (t: number): number => {
 	return -(Math.cos(Math.PI * t) - 1) / 2;
 };
 
+const getDotRgb = () => {
+	return colorMode.value === 'dark' ? '255, 255, 255' : '0, 0, 0';
+};
+
 const animate = (timestamp: number) => {
 	const canvas = canvasRef.value;
 	if (!canvas) return;
@@ -91,6 +96,8 @@ const animate = (timestamp: number) => {
 		moveStartTime = timestamp;
 	}
 
+	const dotRgb = getDotRgb();
+
 	for (const dot of dots) {
 		const dx = activePoint.x - dot.baseX;
 		const dy = activePoint.y - dot.baseY;
@@ -118,7 +125,7 @@ const animate = (timestamp: number) => {
 
 		ctx.beginPath();
 		ctx.arc(dot.x, dot.y, dotRadius, 0, Math.PI * 2);
-		ctx.fillStyle = `rgba(0, 0, 0, ${opacity})`;
+		ctx.fillStyle = `rgba(${dotRgb}, ${opacity})`;
 		ctx.fill();
 	}
 
